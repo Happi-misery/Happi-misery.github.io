@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.top-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 50px; /* Set desired height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 70% transparency */
+    z-index: 1; /* Make sure it's on top of other elements */
+    display: flex;
+    justify-content: space-evenly; /* Aligns items with space between */
+    align-items: center;
+
+}
+
+.banner-text {
+    color: rgb(253, 163, 163);
+    font-size: 24px; /* Set font size */
+    margin-right: -15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+a:hover {
+    color: white;
+    transform: scale(1.2);
+
+}
+
+.gallery {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between images */
+    padding-top : 100px; /* Padding around the gallery */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.gallery img {
+    width: 100%; /* Make images responsive */
+    height: 400px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.scroll-wrapper {
+    height: 100vh; /* Full viewport height */
+    overflow-y: scroll; /* Allow vertical scrolling */
+}
