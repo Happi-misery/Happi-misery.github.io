@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
+
 }
 
 #background-video {
@@ -38,7 +39,7 @@ body {
 
 .name {
     color: rgb(253, 163, 163);
-    font-size: 60px;
+    font-size: 7vw;
     text-align: center;
     line-height: 0.6;
 }

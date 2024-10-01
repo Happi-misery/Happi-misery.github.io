@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 50px; /* Set desired height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 70% transparency */
+    z-index: 1; /* Make sure it's on top of other elements */
+    display: flex;
+    justify-content: space-evenly; /* Aligns items with space between */
+    align-items: center;
+
+}
+
+.banner-text {
+    color: rgb(253, 163, 163);
+    font-size: 24px; /* Set font size */
+    margin-right: -15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sosh{
+    text-decoration: none;
+    color: rgb(253, 163, 163);
+    font-size: 30px;
+}
+
+.byee{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
