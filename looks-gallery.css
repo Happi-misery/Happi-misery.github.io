@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.top-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 50px; /* Set desired height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 70% transparency */
+    z-index: 1; /* Make sure it's on top of other elements */
+    display: flex;
+    justify-content: space-evenly; /* Aligns items with space between */
+    align-items: center;
+
+}
+
+.banner-text {
+    color: rgb(253, 163, 163);
+    font-size: 24px; /* Set font size */
+    margin-right: -15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+a:hover {
+    color: white;
+    transform: scale(1.2);
+
+}
+
+.gallery {
+    display: grid; /* Use grid layout */
+    grid-template-columns: auto auto; /* Responsive columns */
+    gap: 50px; /* Space between images */
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.gallery img {
+    width: 100%; /* Make images responsive */
+    height: 400px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.gallery iframe {
+    width: 100%; /* Make images responsive */
+    height: 400px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+
+/* Hide Scroll bar */
+
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.scroll-wrapper {
+    height: 100vh; /* Full viewport height */
+    overflow-y: scroll; /* Allow vertical scrolling */
+}
+
+
+/* Popup */
+
+
+.thumbnail {
+    width: 300px; /* Thumbnail size */
+    cursor: pointer; /* Change cursor to pointer */
+    margin: 10px; /* Space between images */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin-top: auto;
+    display: block;
+    position: relative; /* Set to relative for centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    max-width: 90%; /* Maximum width 90% of the viewport */
+    max-height: 90%; /* Maximum height 90% of the viewport */
+    width: auto; /* Automatically adjust width */
+    height: auto; /* Automatically adjust height */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#caption {
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    width: 80%;
+}
+
+.header{
+    color: white;
+    padding-top: 80px;
+    padding-left: 30px;
+    font-size: 50px;
+    
+}
+
+#clicky {
+    padding-left: 20px;
+}

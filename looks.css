@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 30%;
+    height: 30%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black rectangle */
+    z-index: -1; /* Between the video and the content */
+}
+
+.name {
+    color: rgb(253, 163, 163);
+    font-size: 7vw;
+    text-align: center;
+    line-height: 0.6;
+}
+
+.top-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 50px; /* Set desired height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 70% transparency */
+    z-index: 1; /* Make sure it's on top of other elements */
+    display: flex;
+    justify-content: space-evenly; /* Aligns items with space between */
+    align-items: center;
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+.banner-text {
+    color: rgb(253, 163, 163);
+    font-size: 24px; /* Set font size */
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+a:hover {
+    color: white;
+    transform: scale(1.2);
+
+}
+
